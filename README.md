@@ -1,4 +1,4 @@
-# Technical test
+# Quest of the Pixels
 
 - Node.js/Express/passport server
 - Lowdb json database
