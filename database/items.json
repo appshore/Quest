@@ -1,0 +1,22 @@
+{
+  "items": [
+    {
+      "username": "test",
+      "coins": "50",
+      "gems": 10,
+      "potions": 34
+    },
+    {
+      "username": "test1",
+      "coins": 23,
+      "gems": 10,
+      "potions": 34
+    },
+    {
+      "username": "test2",
+      "coins": 23,
+      "gems": 10,
+      "potions": 34
+    }
+  ]
+}
