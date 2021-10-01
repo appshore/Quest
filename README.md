@@ -1,10 +1,12 @@
 # Quest of the Pixels
 
+## Installation
+
 - Node.js/Express/passport server
 - Lowdb json database
 - Global parameters set in .env file
 
-```
+```bash
 # Install dependencies
 yarn
 
@@ -15,12 +17,13 @@ yarn start
 yarn test
 ```
 
-# Use Postman or Curl to hit the endpoints
+## Use Postman or Curl to hit the endpoints
 
 - Only json requests are accepted, set Accept or Content-Type to application/json in Headers tab
 
 - Login will return a Token to add as a Bearer in Authentication tab
-```
+  
+```bash
 curl -X POST \
   http://localhost:3000/apiv1/auth/login \
   -H 'Accept: application/json' \
@@ -41,9 +44,9 @@ curl -X POST \
 } 
 ```
 
-
 - Ping the server
-```
+  
+```bash
 curl -X GET \
   http://localhost:3000/apiv1/ping \
   -H 'Accept: application/json' \
@@ -57,7 +60,8 @@ curl -X GET \
 ```
 
 - Ping the server once authenticated
-```
+  
+```bash
 curl -X GET \
   http://localhost:3000/apiv1/ping \
   -H 'Accept: application/json' \
@@ -72,7 +76,8 @@ curl -X GET \
 ```
 
 - List all items for the authenticated user
-```
+  
+```bash
 curl -X GET \
   http://localhost:3000/apiv1/items/ \
   -H 'Accept: application/json' \
@@ -93,7 +98,8 @@ curl -X GET \
 ```
 
 - Add some coins, replace coins by gems or potions in the uri below
-```
+  
+```bash
 curl -X POST \
   http://localhost:3000/apiv1/items/coins/4 \
   -H 'Accept: application/json' \
@@ -115,7 +121,8 @@ curl -X POST \
 ```
 
 - Delete some gems, replace gems by coins or potions in the uri below
-```
+  
+```bash
 curl -X DELETE \
   http://localhost:3000/apiv1/items/gems/14 \
   -H 'Accept: application/json' \
